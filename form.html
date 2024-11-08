@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <title>Imagine 3D</title>
+    <link rel="StyleSheet" href="./style.css" />
+    <title>Formulario / Imagine 3D</title>
   </head>
   <body class="container">
-    <header></header>
-    <main></main>
+    <main>
+      <section class="formulario">
+        <div class="form-container">
+          <form class="form">
+            <div class="form-group">
+              <label for="email">Mail de entrega</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                required=""
+                placeholder="Ingresa tu mail"
+              />
+            </div>
+            <div class="form-group">
+              <label for="textarea">¿Tienes indicaciones adicionales?</label>
+              <textarea
+                name="textarea"
+                id="textarea"
+                rows="10"
+                cols="50"
+                required=""
+                placeholder="Quisiera que tengan en cuenta..."
+              ></textarea>
+            </div>
+
+            <button class="form-submit-btn" type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="contact">
         <div class="contact-title">
@@ -19,7 +47,7 @@
           <div>
             <ul>
               <li class="encabezado-color">Menú</li>
-              <li><a>Inicio</a></li>
+              <li><a href="./index.html">Inicio</a></li>
               <li><a>Catálogo</a></li>
               <li><a href="./form.html">Formulario</a></li>
             </ul>
