@@ -1,6 +1,11 @@
-let hasta100 = 100;
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
 
-while (hasta100 > 0) {
-  console.log(hasta100);
-  hasta100--;
-}
+abrir.addEventListener("click", () => {
+  nav.classList.add("visible");
+});
+
+cerrar.addEventListener("click", () => {
+  nav.classList.remove("visible");
+});
