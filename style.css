@@ -85,10 +85,17 @@ a {
   justify-content: start;
   align-items: center;
   padding-top: 20px;
+  cursor: pointer;
 }
 
 .cards-category .card-gris {
   background: linear-gradient(rgba(163, 163, 163, 0.4), transparent);
+}
+
+.cards-category li a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 /* Seccion categorias */
 
@@ -664,3 +671,144 @@ footer {
 }
 
 /* Final sección de formulario */
+
+/* Inicio Shop */
+
+.buttonAgregar {
+  border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+}
+
+.margenesCategorias {
+  margin: 20px;
+}
+
+.categoriasProducto h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sectionProductos {
+  display: grid;
+  place-content: center;
+  grid-template-columns:270px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 40px;
+  margin-bottom: 50px;
+}
+
+
+.cardProductos {
+  width: 270px;
+  background: linear-gradient(rgba(163, 163, 163, 0.4), transparent);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.cardProductos img {
+  width: 250px;
+}
+
+.cardProductos .botonesProducto {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.cardProductos div p {
+  color: #bdbcbc;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cardProductos .botonesProducto a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #bdbcbc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #000000;
+}
+
+.cardProductos .botonesProducto a img {
+  width: 24px;
+}
+
+.cardProductos .botonesProducto .buttonComprar {
+  background-color: #5e17eb;
+  padding: 10px 18px;
+}
+
+.cardProductos .botonesProducto .buttonComprar:hover {
+  background-color: #b6f319;
+  color: #000000;
+  padding: 10px 18px;
+}
+
+.buttonAgregar {
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header div #carrito {
+  width: 30px;
+}
+
+#carrito {
+  color: white;
+}
+
+.containerCarrito {
+  position: relative;
+
+}
+
+
+.cantidad {
+  align-items: center;
+  justify-content: center;
+  color: white;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #5e17eb;}
+
+@media screen and (width > 810px) {
+  .sectionProductos {
+    grid-template-columns:270px 270px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 30px;
+  }
+
+  @media screen and (width > 1024px) {
+    .sectionProductos {
+      grid-template-columns: repeat(3, 270px) 
+        }
+  }
+}
+/* Final Shop */
