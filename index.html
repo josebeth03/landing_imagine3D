@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Imagine 3D</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   </head>
   <body class="container">
     <header>
@@ -19,7 +20,7 @@
           <li><a href="./form.html">Preguntas</a></li>
         </ul>
       </nav>
-      <a class="boton-nav">Ver la tienda</a>
+      <a class="boton-nav" href="/shop.html">Ver la tienda</a>
     </header>
     <main>
       <section class="hero-section">
@@ -41,6 +42,7 @@
         <h2>Revisa nuestros diseños</h2>
         <ul class="cards-category">
           <li>
+            <a href="./shop.html#arquitectura">
             <h5>Categoría</h5>
             <h4>Arquitectura</h4>
             <div>
@@ -50,8 +52,11 @@
                 width="100"
               />
             </div>
+          </a>
           </li>
+          </a>
           <li class="card-gris">
+            <a href="./shop.html#figuras">
             <h5>Categoría</h5>
             <h4>Figuras</h4>
             <div>
@@ -61,29 +66,34 @@
                 width="100"
               />
             </div>
+          </a>
           </li>
           <li>
-            <h5>Categoría</h5>
-            <h4>Decoración</h4>
-            <div>
-              <img
+              <a href="./shop.html#decoracion">
+              <h5>Categoría</h5>
+              <h4>Decoración</h4>
+              <div>
+                <img
                 src="./img/categorias/img-decoracion.png"
                 alt="imagen decoración"
                 width="100"
-              />
-            </div>
+                />
+              </div>
+             </a>
           </li>
           <li class="card-gris">
-            <h5>Categoría</h5>
-            <h4>Herramientas</h4>
-            <div>
-              <img
-                src="./img/categorias/img-herramientas.png"
-                alt="imagen Herramientas"
-                width="100"
-              />
-            </div>
-          </li>
+              <a href="./shop.html#herramientas">
+              <h5>Categoría</h5>
+              <h4>Herramientas</h4>
+              <div>
+                <img
+                  src="./img/categorias/img-herramientas.png"
+                  alt="imagen Herramientas"
+                  width="100"
+                />
+              </div>
+              </a>
+            </li>
         </ul>
       </section>
       <section id="section-steps" class="sections">
