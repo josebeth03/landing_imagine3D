@@ -40,7 +40,6 @@ if (carrito.length === 0) {
 
     const indice = carrito.findIndex((item) => item.nombre === producto.nombre)
 
-    console.log(indice)
 
     if(indice === -1) {
       carrito.push(producto)
